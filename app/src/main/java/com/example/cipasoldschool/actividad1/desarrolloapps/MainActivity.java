@@ -8,8 +8,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.cipasoldschool.actividad1.desarrolloapps.controller.SalaryController;
-import com.example.cipasoldschool.actividad1.desarrolloapps.model.Salary;
+import com.example.cipasoldschool.actividad1.desarrolloapps.controller.PayrollController;
+import com.example.cipasoldschool.actividad1.desarrolloapps.model.Payroll;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
 
     //This method calculates the month payment of an employee
     public void calculateMonthPayment(View view){
-        Salary salary = new Salary();
-        salary.setBaseSalary(Double.parseDouble(baseSalary.getText().toString()));
-        salary.setExtraHours(Integer.parseInt(extraHours.getText().toString()));
+        Payroll payroll = new Payroll();
+        payroll.setBaseSalary(Double.parseDouble(baseSalary.getText().toString()));
+        payroll.setExtraHours(Integer.parseInt(extraHours.getText().toString()));
         boolean bonusFromCheckBox = bonus.isChecked();
         if (bonusFromCheckBox){
-            salary.setBonus(1);
+            payroll.setBonus(1);
         }
-        String totalSalary = SalaryController.calculateTotalSalary(salary);
+        String totalSalary = PayrollController.calculateTotalSalary(payroll);
 
         result.setText(totalSalary);
 
