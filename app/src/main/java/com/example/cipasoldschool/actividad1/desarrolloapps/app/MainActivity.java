@@ -1,4 +1,4 @@
-package com.example.cipasoldschool.actividad1.desarrolloapps;
+package com.example.cipasoldschool.actividad1.desarrolloapps.app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.cipasoldschool.actividad1.desarrolloapps.R;
 import com.example.cipasoldschool.actividad1.desarrolloapps.controller.PayrollController;
 import com.example.cipasoldschool.actividad1.desarrolloapps.model.Payroll;
 
@@ -31,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * @param view (View)
+     * Descripción: Recibe los valores de los componentes.
+     * Calcula el pago mensual del empleado y asigna los valores a los componentes correspondientes.
+     */
     //This method calculates the month payment of an employee
     public void calculateMonthPayment(View view){
         Payroll payroll = new Payroll();
