@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CipasOldSchoolActividad1DesarrolloApps</string>
+    <string name="baseSalary_hint">Digite su salario base</string>
+    <string name="extraHours_hint">Digite la cantidad de horas extra</string>
+    <string name="bonus_hint">¿Tuvo bonificación?</string>
+    <string name="nomina_button">Calcular nómina</string>
+    <string name="resultado_hint">Resultado</string>
 </resources>
